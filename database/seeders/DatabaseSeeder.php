@@ -14,15 +14,14 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      */
-    public function run(): void
-    {
-        // User::factory(10)->create();
+ public function run(): void
+{
+    $this->call([
+        UserSeeder::class,
+        SpotSeeder::class, // إذا لم تضفها مسبقًا
+        PaymentSeeder::class
+    ]);
+}
 
-        User::factory()->create([
-            'name' => 'Admin',
-        'email' => 'admin@example.com',
-        'password' => Hash::make('password'),
-        'role' => 'admin'
-        ]);
-    }
+
 }

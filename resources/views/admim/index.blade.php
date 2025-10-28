@@ -8,12 +8,12 @@
       <div class="layout-container">
         <!-- Menu -->
 
-            @include('admim.sidebar')
+            @include('admim.layouts.sidebar')
 
         <!-- / Menu -->
 
         <!-- Layout container -->
-        <div class="layout-page">
+        <div class="">
           <!-- Navbar -->
 
           <nav
