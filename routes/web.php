@@ -28,3 +28,9 @@ Route::view('/contact', 'user.contact')->name('contact');
 Route::view('/destination', 'user.destination')->name('destination');
 Route::view('/hotel', 'user.hotel')->name('hotel');
 Route::view('/main', 'user.main')->name('main');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('admim.index'); // points to resources/views/admin/index.blade.php
+    })->name('admin.index');
+});
