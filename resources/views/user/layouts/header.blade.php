@@ -27,19 +27,37 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
                 <span class="oi oi-menu"></span> Menu
             </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="{{ route('destination') }}" class="nav-link">Destination</a></li>
-                    <li class="nav-item"><a href="{{ route('hotel') }}" class="nav-link">Hotel</a></li>
-                    <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-                                 <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">login</a></li>
-                    <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">register</a></li>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="{{ route('destination') }}" class="nav-link">Destination</a></li>
+        <li class="nav-item"><a href="{{ route('hotel') }}" class="nav-link">Hotel</a></li>
+        <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
 
-                </ul>
-            </div>
+        @auth
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                    {{ Auth::user()->name }}
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        @else
+            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+        @endauth
+    </ul>
+</div>
+
         </div>
     </nav>
     <!-- END nav -->
