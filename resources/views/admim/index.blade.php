@@ -21,13 +21,16 @@
 
                         <!-- Total Tickets -->
                         <div class="col-md-3">
-                            <div class="card shadow-sm border-0 h-100 text-center hover-shadow">
-                                <div class="card-body">
-                                    <i class="bx bx-ticket fs-1 text-success mb-2"></i>
-                                    <h6 class="text-muted mb-1">Total Tickets</h6>
-                                    <h3 class="fw-bold">{{ $totalTickets }}</h3>
-                                </div>
-                            </div>
+    <div class="card shadow-sm border-0 h-100 text-center hover-shadow">
+        <div class="card-body">
+            <!-- أيقونة محفظة -->
+            <i class="bx bx-wallet fs-1 text-success mb-2"></i>
+            <h6 class="text-muted mb-1">Total Tickets</h6>
+            <h3 class="fw-bold">{{ $totalTickets }}</h3>
+        </div>
+    </div>
+
+
                         </div>
 
                         <!-- Total Users -->
@@ -89,6 +92,7 @@
             </div>
 
 <!-- Chart.js -->
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('monthlyRevenueChart').getContext('2d');
@@ -128,4 +132,6 @@ new Chart(ctx, {
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 </style>
+
+
 @endsection

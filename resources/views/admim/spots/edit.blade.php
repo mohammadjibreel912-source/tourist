@@ -4,7 +4,7 @@
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4">Edit Spot</h4>
 
-    <div class="card mb-4">
+    <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <form action="{{ route('spots.update', $spot->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -31,9 +31,9 @@
                     <label class="form-label">Images (multiple allowed)</label>
                     <input type="file" name="images[]" class="form-control" multiple>
                     @if($spot->images)
-                        <div class="mt-2 d-flex flex-wrap">
+                        <div class="mt-2 d-flex flex-wrap gap-1">
                             @foreach(json_decode($spot->images) as $img)
-                                <img src="{{ asset('storage/'.$img) }}" width="80" class="me-2 mb-2 border rounded"/>
+                                <img src="{{ asset('storage/'.$img) }}" width="80" class="border rounded">
                             @endforeach
                         </div>
                     @endif

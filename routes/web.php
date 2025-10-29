@@ -7,6 +7,7 @@ use App\Http\Controllers\SpotController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Controllers\Admin\UserManagementController;
+use App\Http\Controllers\QrTestController;
 
 // الصفحة الرئيسية
 Route::view('/', 'user.index')->name('home');
@@ -50,3 +51,5 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('users/create', [UserManagementController::class, 'create'])->name('users.create');
     Route::post('users', [UserManagementController::class, 'store'])->name('users.store');
 });
+Route::get('/qr-test', [QrTestController::class, 'generate']);
+Route::get('spots/{spot}/360/{index}', [SpotController::class, 'show360'])->name('spots.show360');

@@ -17,16 +17,17 @@
         </a>
     </div>
 
-    <div class="card">
+    <div class="card shadow-sm border-0">
         <div class="card-body">
             <div class="table-responsive text-nowrap">
-                <table class="table table-hover">
+                <table class="table table-hover align-middle">
                     <thead class="table-light">
                         <tr>
                             <th>Name</th>
                             <th>Address</th>
                             <th>Ticket Price</th>
                             <th>Payment QR</th>
+                            <th>Images</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -35,12 +36,33 @@
                         <tr>
                             <td>{{ $spot->name }}</td>
                             <td>{{ $spot->address }}</td>
-                            <td>{{ $spot->ticket_price }} JOD</td>
+                            <td>{{ number_format($spot->ticket_price, 2) }} JOD</td>
                             <td>
-                                <a href="{{ route('spots.showQr', $spot->id) }}" target="_blank" class="btn btn-sm btn-info">
-                                    <i class="bx bx-qrcode"></i> Show QR
-                                </a>
+                                @if($spot->qr_code_image)
+                                    <a href="{{ asset('storage/' . $spot->qr_code_image) }}" target="_blank" class="btn btn-sm btn-info">
+                                        <i class="bx bx-qrcode"></i> Show QR
+                                    </a>
+                                @endif
                             </td>
+                           <td>
+    @php
+        $images = is_array($spot->images) ? $spot->images : json_decode($spot->images, true);
+    @endphp
+
+    @if($images)
+        <div class="d-flex flex-wrap gap-2">
+            @foreach($images as $index => $img)
+                <div class="position-relative">
+                    <img src="{{ asset('storage/'.$img) }}" width="50" class="border rounded">
+                    <a href="{{ route('spots.show360', [$spot->id, $index]) }}" target="_blank" class="position-absolute top-0 end-0 btn btn-sm btn-primary">
+                        <i class="bx bx-rotate-right"></i>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    @endif
+</td>
+
                             <td>
                                 <a href="{{ route('spots.edit', $spot->id) }}" class="btn btn-sm btn-warning">
                                     <i class="bx bx-edit"></i> Edit
@@ -57,6 +79,8 @@
                         @endforeach
                     </tbody>
                 </table>
+
+                {{ $spots->links('pagination::bootstrap-5') }}
             </div>
         </div>
     </div>
