@@ -4,10 +4,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>
-                    &copy; {{ date('Y') }} All rights reserved |
-                    This template is made with
-                    <i class="fa fa-heart text-danger" aria-hidden="true"></i>
-                    by <a href="https://colorlib.com" target="_blank" class="text-decoration-none">Colorlib</a>
+                    &copy; {{ date('Y') }}
                 </p>
             </div>
         </div>

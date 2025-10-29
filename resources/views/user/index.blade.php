@@ -662,7 +662,7 @@
 					<div class="col-md-12 text-center">
 						<div class="img"  style="background-image: url(user/images//bg_2.jpg);">
 							<div class="overlay"></div>
-							<h2>We Are Explore360&deg; A Travel Agency</h2>
+							<h2>We Are Explore360&deg; A Jordan</h2>
 							<p>We can manage your dream building A small river named Duden flows by their place</p>
 							<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
 						</div>

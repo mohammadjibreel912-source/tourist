@@ -4,9 +4,7 @@
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4">User Management</h4>
 
-    <a href="{{ route('admin.users.create') }}" class="btn btn-primary mb-3">
-        <i class="bx bx-plus me-1"></i> Add New User
-    </a>
+
 
     <div class="card">
         <div class="card-body">

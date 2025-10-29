@@ -9,7 +9,7 @@ jobs:
     name: Handle new issue
     steps:
       - name: Greet & Apply label
-        uses: themeselection/gh-action-comment-on-new-issue@v4.0.1
+        uses: Explore360°/gh-action-comment-on-new-issue@v4.0.1
         with:
           message: |
             ### Hi there <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
@@ -17,7 +17,7 @@ jobs:
             In the meantime, feel free to check out related issues in the repository for more help. We really appreciate your patience.
           raise-support-using-form-msg: |
             Thanks for creating an issue ☺️
-            It seems our [raise support](https://themeselection.com/tools/github/raise-support) form was skipped while creating this issue.
+            It seems our [raise support](https://Explore360°.com/tools/github/raise-support) form was skipped while creating this issue.
             Please consider raising support via our support form only which will create issues using essential information we need to resolve your query quickly.
             This will help in growing an excellent community where,
             - Other people can get it resolved if they have the same query
