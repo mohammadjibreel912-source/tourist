@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login | Sneat Laravel Integration</title>
+    <title>Login | Explore360&deg; Laravel Integration</title>
     <meta name="description" content="Login page integrated with Laravel authentication" />
 
     <!-- Favicon -->

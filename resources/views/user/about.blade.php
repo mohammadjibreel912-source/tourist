@@ -18,7 +18,7 @@
     <div class="row d-flex">
       <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
        <div class="w-100">
-        <span class="subheading">Welcome to Pacific</span>
+        <span class="subheading">Welcome to Explore360&deg;</span>
         <h2 class="mb-4">It's time to start your adventure</h2>
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
@@ -238,7 +238,7 @@
    <div class="col-md-12 text-center">
     <div class="img"  style="background-image: url(user/images//bg_2.jpg);">
      <div class="overlay"></div>
-     <h2>We Are Pacific A Travel Agency</h2>
+     <h2>We Are Explore360&deg; A Travel Agency</h2>
      <p>We can manage your dream building A small river named Duden flows by their place</p>
      <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
    </div>

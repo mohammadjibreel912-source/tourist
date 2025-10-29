@@ -46,11 +46,11 @@
                 <li class="nav-item lh-1 me-3">
                   <a
                     class="github-button"
-                    href="https://github.com/themeselection/sneat-html-/admin-template-free"
+                    href="https://github.com/themeselection/Explore360&deg;-html-/admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
                     data-show-count="true"
-                    aria-label="Star themeselection/sneat-html-/admin-template-free on GitHub"
+                    aria-label="Star themeselection/Explore360&deg;-html-/admin-template-free on GitHub"
                     >Star</a
                   >
                 </li>
@@ -675,14 +675,14 @@
                   <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
 
                   <a
-                    href="https://themeselection.com/demo/sneat-bootstrap-html-/admin-template/documentation/"
+                    href="https://themeselection.com/demo/Explore360&deg;-bootstrap-html-/admin-template/documentation/"
                     target="_blank"
                     class="footer-link me-4"
                     >Documentation</a
                   >
 
                   <a
-                    href="https://github.com/themeselection/sneat-html-/admin-template-free/issues"
+                    href="https://github.com/themeselection/Explore360&deg;-html-/admin-template-free/issues"
                     target="_blank"
                     class="footer-link me-4"
                     >Support</a
@@ -706,7 +706,7 @@
 
     <div class="buy-now">
       <a
-        href="https://themeselection.com/products/sneat-bootstrap-html-/admin-template/"
+        href="https://themeselection.com/products/Explore360&deg;-bootstrap-html-/admin-template/"
         target="_blank"
         class="btn btn-danger btn-buy-now"
         >Upgrade to Pro</a

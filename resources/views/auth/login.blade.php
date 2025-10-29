@@ -11,7 +11,7 @@
               <div class="app-brand justify-content-center mb-4">
                 <a href="{{ url('/') }}" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
-                    <!-- Sneat SVG Logo -->
+                    <!-- Explore360&deg; SVG Logo -->
                     <svg width="25" viewBox="0 0 25 42" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <path
@@ -22,7 +22,7 @@
                       <use fill="#696cff" xlink:href="#path-1"></use>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Explore360&deg;</span>
                 </a>
               </div>
               <!-- /Logo -->

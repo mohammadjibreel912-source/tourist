@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>@yield('title', 'Pacific Travel Agency')</title>
+    <title>@yield('title', 'Explore360&deg; Travel Agency')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -23,7 +23,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">Pacific<span>Travel Agency</span></a>
+            <a class="navbar-brand" href="{{ route('home') }}">Explore360&deg;<span>Travel Agency</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
                 <span class="oi oi-menu"></span> Menu
             </button>

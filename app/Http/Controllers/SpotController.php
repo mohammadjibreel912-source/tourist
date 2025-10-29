@@ -96,4 +96,12 @@ class SpotController extends Controller
         $spot->delete();
         return redirect()->route('spots.index')->with('success', 'Spot deleted successfully.');
     }
+
+      public function showQr(Spot $spot)
+    {
+        // Generate QR code for the payment code
+        $qr = QrCode::size(200)->generate($spot->payment_code);
+
+        return view('admim.spots.qr', compact('spot', 'qr'));
+    }
 }
